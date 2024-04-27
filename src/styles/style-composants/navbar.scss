@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 45px;
+    max-width: 1240px;
+    width: 100%;
+    background: green;
+}
+
+.kasa-mobile {
+    display: none;
+}
+
+nav ul {
+    display: flex;
+    flex-direction: row;
+    gap: 57px;
+    list-style: none;
+}
+
+a {
+    color: #000;
+    font-size: 24px;
+    font-weight: 500;
+    text-decoration: none;
+    font-family: Montserrat;
+}
+
+.active {
+    text-decoration-line: underline;
+}
