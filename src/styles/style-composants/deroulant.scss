@@ -1,0 +1,47 @@
+.Deroulant {    
+    .titre-deroulant {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #FF6060;
+    border: none;
+    width: 100%;
+    color: #FFF;
+    font-size: 24px;
+    font-weight: 00;
+    height: 50px;
+    
+    .fleche {
+      float: right;
+    }
+
+    .open {
+      transform: rotate(180deg);
+      transition: transform 0.3s ease;
+    }
+
+    .close {
+    transform: rotate(360deg);
+      transition: transform 0.3s ease;
+    }
+  }
+
+      
+  .contenu-deroulant {
+    background-color: #F6F6F6;
+    padding: 16px;
+    
+    
+    p {
+    font-size: 18px;
+    font-weight: 400;
+    margin: 0px;
+    }
+  }
+  
+}
+
+

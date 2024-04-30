@@ -9,7 +9,7 @@ import Footer from './composants/footer'
 import Home from './pages/Home';
 import About from './pages/About';
 import LocationDetail from './pages/LocationDetail';
-import NotFound from './pages/NotFound';
+import Error from './pages/Error';
 
 function App() {
   return (
@@ -21,7 +21,7 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
           <Route path="/location-detail" element={<LocationDetail />} />
-          <Route path="*" element={<NotFound />} />
+          <Route path="*" element={<Error />} />
         </Routes>
         </main>
         <Footer/>
