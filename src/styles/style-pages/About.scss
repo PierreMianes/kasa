@@ -1,11 +1,15 @@
-.about-deroulant {
-    display: flex;
-    flex-direction: column;
-    gap: 30px;
-    align-items: center;
-
-    .Deroulant {  
-    max-width: 1000px;
+.about {
     width: 100%;
+
+    .about-deroulant {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        align-items: center;
+    
+        .Deroulant {  
+        max-width: 1000px;
+        width: 100%;
+        }
     }
 }

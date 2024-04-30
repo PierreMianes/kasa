@@ -1,8 +1,53 @@
+.home {
+    width: 100%;
+    height: 100%;
+
+    .locations {
+        border-radius: 25px;
+        background: #F6F6F6;
+        display: flex;
+        flex-wrap: wrap;
+        padding-top: 31px;
+        padding-bottom: 18px;
+        width: 100%;
+        height: 100%;
+        justify-content: center;
+    
+        .location-link {
+            width: 340px;
+            height: 340px;
+            position: relative;
+            border-radius: 10px;
+            overflow: hidden;
+            color: #FF6060;
+            margin: 25px 30px;
+    
+            img {
+                width: 340px;
+                height: 340px;
+                object-fit: cover;
+            }
+    
+            h3 {
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                box-sizing: border-box;
+                color: #FFF;
+                font-size: 18px;
+                font-weight: 700;
+                max-width: 300px;
+                width: 100%;
+            }
+    
+        }
+    }
+}
+
 .Bandeau {
     margin-top: 50px;
     margin-bottom: 43px;
     position: relative;
-    min-width: 1240px;
     width: 100%;
     height: 223px;
     border-radius: 25px;
@@ -36,48 +81,5 @@
         text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
         font-size: 48px;
         font-weight: 700;
-    }
-}
-
-.locations {
-    min-width: 1240px;
-    border-radius: 25px;
-    background: green;
-    padding: 0px;
-    display: flex;
-    flex-wrap: wrap;
-    padding-top: 56px;
-    padding-bottom: 43px;
-    min-height: 3000px;
-    padding-left: 20px;
-
-    .location-link {
-        width: 340px;
-        height: 340px;
-        position: relative;
-        border-radius: 10px;
-        overflow: hidden;
-        color: #FF6060;
-        margin: 0px 30px;
-        padding: 0px;
-
-        img {
-            width: 340px;
-            height: 340px;
-            object-fit: cover;
-        }
-
-        h3 {
-            position: absolute;
-            bottom: 0;
-            left: 0;
-            box-sizing: border-box;
-            color: #FFF;
-            font-size: 18px;
-            font-weight: 700;
-            max-width: 300px;
-            width: 100%;
-        }
-
     }
 }

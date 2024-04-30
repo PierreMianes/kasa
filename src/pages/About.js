@@ -5,7 +5,7 @@ import '../styles/style-pages/About.scss'
 
 function About() {
   return (
-    <div>
+    <div className='about'>
       <div className='Bandeau'>
         <div className='overlay'></div>
         <img src={PaysageBandeau} alt='Plage' />
