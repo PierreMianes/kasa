@@ -8,7 +8,7 @@ import Footer from './composants/footer'
 // Import des composants de page
 import Home from './pages/Home';
 import About from './pages/About';
-import LocationDetail from './pages/LocationDetail';
+import LocationInfo from './pages/LocationInfo';
 import Error from './pages/Error';
 
 function App() {
@@ -20,7 +20,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
-          <Route path="/location-detail" element={<LocationDetail />} />
+          <Route path="/location-info/:id" element={<LocationInfo />} />
           <Route path="*" element={<Error />} />
         </Routes>
         </main>

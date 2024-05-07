@@ -1,0 +1,99 @@
+.carrousel {
+    max-width: 1240px;
+    width: 100%;
+    border-radius: 25px;
+    overflow: hidden;
+    position: relative;
+    height: 415px;
+    display: flex;
+    margin-top: 50px;
+}
+
+.carrousel-images {
+    width: 100%;
+    display: flex;
+    transition: transform 0.9s ease;
+    height: 100%;
+    position: absolute;
+    left: 0;
+}
+
+.carrousel-diapo {
+    max-width: 1240px;
+    width: 100%;
+    height: 415px;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+}
+
+
+.carrousel-nombre {
+    position: absolute;
+    z-index: 20;
+    color: #FFF;
+    margin-top: 357px;
+    text-align: center;
+    font-family: 'Montserrat';
+    font-size: 18px;
+    font-weight: 500;
+    display: flex;
+    left: 50%;
+}
+
+.carrousel-image {
+    width: 100%;
+    flex: 0 0 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.carrousel-fleche {
+    position: absolute;
+    top: 50%;
+    width: 96%;
+    transform: translateY(-50%);
+    pointer-events: none;
+    margin: 0px;
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+
+
+    img {
+        pointer-events: all;
+        z-index: 10;
+    }
+}
+
+
+.carrousel-fleche:hover {
+    cursor: pointer;
+}
+
+@media (max-width: 480px) {
+    .carrousel-fleche {
+        width: 96%;
+        height: 20px;
+        top: 30%;
+        transform: translateY(-50%);
+    }
+
+    .carrousel {
+        width: 100%;
+        border-radius: 25px;
+        height: 255px;
+        margin-top: 27px;
+    }
+
+    .carousel-diapo {
+        max-width: 480px;
+        width: 100%;
+        height: 255px;
+    }
+
+    .carrousel-nombre {
+        display: none;
+    }
+}
