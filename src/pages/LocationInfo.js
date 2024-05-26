@@ -6,12 +6,17 @@ import location from '../data/data.json'
 import Carrousel from '../composants/carrousel'
 import etoilePleine from '../images/etoilePleine.svg'
 import etoileVide from '../images/etoileVide.svg'
+import Error from '../pages/Error'
 
 
 
 const LocationInfo = () => {
   let { id } = useParams()
   let property = location.find(p => p.id === id)
+
+  if (!property) {
+    return <Error />;
+  }
 
   const generateRating = (rating) => {
     const NombreTotalEtoiles = 5
