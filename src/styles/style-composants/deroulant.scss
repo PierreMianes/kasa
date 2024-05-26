@@ -44,4 +44,28 @@
   
 }
 
+@media (max-width: 480px) {
+
+  .Deroulant {    
+      .titre-deroulant {
+      height: 30px;
+      font-size: 13px;
+
+      .fleche {
+        height: 20px;
+      }
+    }
+  
+        
+    .contenu-deroulant {
+      padding: 13px;
+      
+      p {
+      font-size: 12px;
+      text-align: left;
+      }
+    }
+  }
+}
+
 

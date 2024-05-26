@@ -4,14 +4,270 @@
 }
 
 .info {
-    margin-top: 40px;
+    margin-top: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 }
 
 .info-gauche {
+    display: flex;
+    flex-direction: column;
 
+    h1 {
+        font-size: 36px;
+        font-weight: 500;
+        color: #FF6060;
+    }
+
+    h2 {
+        font-size: 18px;
+        font-weight: 500;
+        margin-top: 10px;
+    }
+
+    .location-tags {
+        display: flex;
+        flex-direction: row;
+        gap: 10px;
+        margin-top: 20px;
+
+        .tag {
+            padding-left: 30px;
+            padding-right: 30px;
+            height: 25px;
+            border-radius: 10px;
+            background: #FF6060;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #FFF;
+            font-size: 14px;
+            font-weight: 500;
+            min-width: 95px;
+        }
+    }
 }
 
-.location-titre {
+.info-droite {
+    display: flex;
+    flex-direction: column;
 
+    .info-proprio {
+        display: flex;
+        flex-direction: row;
+        gap: 10px;
+
+        .proprio-nom {
+            text-align: right;
+            color: #FF6060;
+            width: 93px;
+            margin-right: 10px;
+            display: flex;
+            align-items: center;
+        }
+
+        img {
+            height: 64px;
+            width: 64px;
+            border-radius: 90px;
+        }
+    }
+
+    .note-location {
+        margin-top: 20px;
+        margin-bottom: 30px;
+        width: 196px;
+        height: 36px;
+        flex-shrink: 0;
+        display: flex;
+        justify-content: center;
+
+        img {
+            width: 20%;
+        }
+    }
 }
+
+.deroulants-info {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    width: 100%;
+    box-sizing: border-box;
+
+    .Deroulant {
+        flex: 1;
+        max-width: 46%;
+        box-sizing: border-box;
+    }
+}
+
+.Deroulant {
+    .titre-deroulant {
+        font-size: 20px;
+        font-weight: 700;
+        
+        .fleche {
+          float: right;
+        }
+
+        .open {
+          transform: rotate(180deg);
+          transition: transform 0.3s ease;
+        }
+
+        .close {
+          transform: rotate(360deg);
+          transition: transform 0.3s ease;
+        }
+    }
+
+    .contenu-deroulant {
+        background-color: #F6F6F6;
+        padding: 16px;
+        width: 100%;
+        
+        p {
+          font-size: 18px;
+          font-weight: 400;
+          margin: 0px;
+        }
+
+        ul {
+          font-family: 'Montserrat';
+          font-size: 18px;
+          font-weight: 400;
+          display: flex;
+          flex-direction: column;
+          gap: 3px;
+          margin: 0px;
+          padding-left: 0px;
+        }
+    }
+}
+
+@media (max-width: 480px) {
+
+    .location-info {
+        max-width: 480px;
+        width: 100%;
+    }
+
+    .info {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .info-gauche {
+        display: flex;
+        flex-direction: column;
+    
+        h1 {
+            font-size: 18px;
+            margin-top: 15px;
+            color: #FF6060;
+        }
+    
+        h2 {
+            font-size: 14px;
+            font-weight: 500;
+            margin-top: 8px;
+        }
+    
+        .location-tags {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            margin-top: 10px;
+    
+            .tag {
+                min-width: 64px;
+                height: 18px;
+                border-radius: 5px;
+                font-size: 10px;
+            }
+        }
+    }
+
+    .info-droite {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 16px;
+
+        .info-proprio {
+            font-size: 12px;
+            font-weight: 500;
+            margin: 0px;
+        }
+        
+        .Photo-proprio {
+            height: 32px;
+            width: 32px;
+            border-radius: 90px;
+        }
+        
+        .proprio-nom {
+            text-align: right;
+            width: 93px;
+            margin-right: 10px;
+            display: flex;
+            align-items: center;
+        }
+        
+        .note-location {
+            width: 98px;
+            height: 18px;
+            flex-shrink: 0;
+            display: flex;
+            justify-content: center;
+        
+            img {
+                width: 20%;
+            }
+        }
+    }
+
+
+
+    .deroulants-info {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        gap: 26px;
+        width: 100%;
+        margin-top: 25px;
+        box-sizing: border-box;
+
+
+        .Deroulant {
+            flex: 1;
+            box-sizing: border-box;
+            width: 100%;
+        }
+      
+        .titre-deroulant {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-size: 15px;
+            font-weight: 500;
+        }
+      
+        .contenu-deroulant {
+          font-size: 10px;
+    
+          ul {
+            font-size: 12px;
+          }
+
+          p {
+            font-size: 12px;
+          }
+        }
+    }
+}
+
 

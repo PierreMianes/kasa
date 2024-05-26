@@ -1,6 +1,6 @@
 import React from 'react';
 import '../styles/style-pages/LocationInfo.scss'
-import { useParams, Navigate } from 'react-router-dom'
+import { useParams } from 'react-router-dom'
 import Deroulant from "../composants/deroulant"
 import location from '../data/data.json'
 import Carrousel from '../composants/carrousel'
@@ -29,8 +29,8 @@ const LocationInfo = () => {
       <Carrousel photos={property.pictures} />
       <div className='info'>
           <div className='info-gauche'>
-            <h1 className="location-titre">{property.title}</h1>
-            <h2 className='location-lieu'>{property.location}</h2>
+            <h1>{property.title}</h1>
+            <h2>{property.location}</h2>
             <div className='location-tags'>
               {property.tags.map((tag, index) => <span key={index} className="tag">{tag}</span>)}
             </div>
@@ -38,25 +38,26 @@ const LocationInfo = () => {
             <div className='info-droite'>
               <div className='info-proprio'>
                 <div className="proprio-nom">{property.host.name}</div>
-                <img src={property.host.picture} className="Photo proprio" alt={`Proprio : ${property.host.name}`}  />
+                <img src={property.host.picture} className="Photo-proprio" alt={`Proprio : ${property.host.name}`}  />
               </div>
                 <div className='note-location'>
                 {generateRating(Number(property.rating))}
                 </div>
             </div>
+        </div>
             <div className='deroulants-info'>
-              <Deroulant title="Description" customClass="deroulant-description">
-                <p>{property.description}</p>
+              <Deroulant titre="Description" className="deroulant-description" contenu={
+              <p>{property.description}</p>}>
               </Deroulant>
-              <Deroulant title="Équipement" customClass="deroulant-equipement">
+              <Deroulant titre="Équipements" className="deroulant-equipement" contenu={
               <ul>
                 {property.equipments.map((equipment, index) => (
                 <li key={index}>{equipment}</li>
               ))}
               </ul>
+              }>
               </Deroulant>
             </div>
-        </div>
       </div>
   )
 }

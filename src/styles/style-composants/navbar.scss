@@ -37,3 +37,28 @@ a {
 .active {
     text-decoration-line: underline;
 }
+
+
+@media (max-width: 480px) {
+    nav {
+        margin-top: 20px;
+        width: 90%;
+
+        .kasa-mobile {
+            display: block;
+        }
+            
+        .kasa-desktop {
+            display: none;
+        }
+    
+        a {
+            font-size: 12px;
+            text-transform: uppercase;
+        }
+    
+        ul {
+            gap: 26px;
+        }
+    }
+  }

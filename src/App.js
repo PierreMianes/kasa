@@ -22,7 +22,7 @@ function App() {
           <Route path="/about" element={<About />} />
           <Route path="/location-info/:id" element={<LocationInfo />} />
           <Route path="*" element={<Error />} />
-        </Routes>
+        </Routes> 
         </main>
         <Footer/>
       </div>
